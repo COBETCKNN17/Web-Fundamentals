@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title align="center">My Registration Page</title>
+	</head>
+	<body>
+		<h2 align="center">My Registration Form</h2>
+		<form align="center">
+			<label>
+        		First Name: <input type="text" name="first_name"><br><br>
+    		</label>
+    		<label>
+        		Last Name: <input type="text" name="last_name"><br><br>
+    		</label>
+    		<label>
+        		Email: <input type="email" name="email_address"><br><br>
+    		</label>
+    		<label>
+        		Password: <input type="password" name="registration_password"><br><br>
+    		</label>
+    		<label>
+        		Password Confirmation: <input type="password" name="password_confirmation"><br><br>
+    		</label>
+
+    		<label for="birthdate">Birthdate: </label>
+        	<input type="date" id="birthdate" name="bday"/><br><br>
+
+        	<label>
+        		Male: <input type="radio" name="gender" value="Male">
+    		</label>
+    		<label>
+        		Female: <input type="radio" name="gender" value="Female">
+    		</label>
+    		<label>
+        		Prefer Not to Say: <input type="radio" name="gender" value="decline">
+    		</label>
+    		<br><br>
+    		<label>
+    			A Short Description About Yourself:<br><br> <textarea rows="4" cols="50"></textarea>
+        		<!--A Short Description About Yourself <input type="textarea" name="personalDescription">--><br><br>
+    		</label>
+    		<label>Favorite Programming Language: 
+			</label>
+			<select name="favLanguage">
+			    <option value="javascript">Javascript</option>
+			    <option value="java">Java</option>
+			    <option value="python">Python</option>
+			    <option value="python">C#</option>
+			</select>
+				<br><br>
+			<label>
+				<input type="submit" value="Submit">
+			</label>
+		</form>
+	</body>
+</html>
