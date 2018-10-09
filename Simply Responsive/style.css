@@ -1,0 +1,60 @@
+#wrapper {
+    background-color: white;
+    padding: 4px;
+}
+
+#header {
+    background-color: silver; 
+    font-size: 20px;
+    min-height: 40px;
+    padding-top: 10px; 
+    padding-bottom: 3px;
+}
+
+#main_content {
+    background-color: grey; 
+}
+
+#width {
+    background-color: blanchedalmond; 
+    padding: 4px;
+}
+
+p {
+    padding: 5px;
+}
+
+#w0 {
+    display: none;
+}
+
+#w481 {
+    display: none;
+}
+
+#w1024 {
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+    #w0 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    #w481 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #w1024 {
+        display: block;
+    }
+    #w481 {
+        display: none;
+    }
+}
+
+

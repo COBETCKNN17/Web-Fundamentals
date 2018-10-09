@@ -1,0 +1,170 @@
+#wrapper {
+	background-color: #1a1a1a;
+	width: 970px;
+	font-family: arial;
+}
+
+#header h3 {
+	text-align: right;
+	padding: 10px;
+	font-size: 14px;
+	color: white;
+	margin-top: -65px;
+	margin-bottom: 30px;
+}
+
+#header img {
+	padding: 10px;
+}
+
+#navigation_tiles {
+	background: linear-gradient(#8A8A8A,#000000);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#navigation_tiles h3 {
+	display: inline;
+	font-size: 12px;
+	height: auto;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+a {
+	display: inline;
+	text-decoration: none;
+	color: #8A8A8A;
+	vertical-align: center;
+	margin-top: 20px;
+	padding: 0px 15px 15px 15px;
+}
+
+#slideshow img {
+	width: 100%;
+}
+
+#lang_container {
+	margin-top: 10px;
+}
+
+.small_icons {
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 3px 0px 10px;
+}
+
+.languages {
+	display: inline-block;
+	width: 18%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+.languages p {
+	color: silver;
+	font-size: 12px;
+}
+
+.languages h3 {
+	color: #ff7b39;
+}
+
+#buy_now {
+	width: 970px;
+	margin-top: -20px;
+	background: repeating-linear-gradient(
+	  -45deg,
+	  #222,
+	  #222 5px,
+	  #333 10px,
+	  #333 5px
+	);
+}
+
+#buy_now p {
+	color: silver;
+	font-weight: normal;
+	margin-top: -10px;
+	margin-left: 25px;
+	width: 70%;
+}
+
+#buy_now h3 {
+	color: silver;
+	font-weight: normal;
+	margin-top: 15px;
+	padding-top: 20px;
+	margin-left: 25px;
+	width: 70%;
+}
+
+#buy_now_button {
+	width: 100px;
+	background-color: #ee8b0e;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+	border-radius: 4px;
+    padding: 5px;
+    border: black;
+    position:relative;
+    top: -60px;
+    left: 800px;
+}
+
+.buy_component {
+	display: inline-block;
+}
+
+#portfolio {
+	background: #1a1a1a;
+	width: 970px;
+	margin-top: -20px;
+}
+
+.portfolio_item {
+	display: inline-block;
+	vertical-align: top;
+	width: 22%;
+	padding: 20px 5px 5px 20px;
+}
+
+.portfolio_item {
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: -10px;
+}
+
+#portfolio h3 {
+	color: white;
+	padding: 35px 0px 0px 20px;
+}
+
+#portfolio h4 {
+	margin-top: 20px;
+	color: #ee8b0e;
+	text-align: left;
+}
+
+#portfolio h5 {
+	margin-top: -35px;
+	color: #ee8b0e;
+	text-align: right;
+}
+
+#back_to_top {
+	margin-top: 20px;
+	color: white;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	font-size: 10px;
+	text-align: right;
+}
+
+#portfolio a {
+	color: #ee8b0e;
+}
+
+

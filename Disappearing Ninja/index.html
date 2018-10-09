@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Disappearing Ninja</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){ 
+			$('.ninja').click(function(){
+				$(this).hide(this); 
+			})
+			$('#restore').click(function(){
+				$(".ninja").show();
+			})
+		})     
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<h2>jQuery Disappearing Ninja</h2>
+		<div class="ninja" id="ninja1"><img src="ninja.png" alt="ninja"/></div>
+		<div class="ninja" id="ninja2"><img src="ninja.png" alt="ninja"/></div>
+		<div class="ninja" id="ninja3"><img src="ninja.png" alt="ninja"/></div>
+		<div class="ninja" id="ninja4"><img src="ninja.png" alt="ninja"/></div>
+		<div class="ninja" id="ninja5"><img src="ninja.png" alt="ninja"/></div>
+		<div class="ninja" id="ninja6"><img src="ninja.png" alt="ninja"/></div>
+		<div class="ninja" id="ninja7"><img src="ninja.png" alt="ninja"/></div>
+		<div class="ninja" id="ninja8"><img src="ninja.png" alt="ninja"/></div>
+
+		<button type="button" id="restore">Restore</button><br>
+	</div>
+</body>
+</html>

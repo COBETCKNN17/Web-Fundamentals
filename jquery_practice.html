@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>JQuery Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    	$(document).ready(function(){
+    		$('h1').html('hello');
+    		$('h1').click(function(){
+    			$('p').toggle();
+    		});
+    	
+    		var myText = $('#myParagraph').text();
+    		// alert(myText);
+	    	$('button').click(function(){
+	    		$('#myParagraph').text('see how .text() works as a setter!'); 
+	    	})
+
+	    	$('img').click(function(){
+                $(this).hide();
+            });
+    	});
+    </script>
+</head>
+<body>
+	<h1>CodingDojo</h1>
+    <p>paragraph</p>
+    <p>2nd paragraph</p>
+    <p id="myParagraph">This is my paragraph</p>
+	<img src="Pacman/the_pacman.png" id="image1"/>
+    <img src="Pacman/the_pacman.gif"/>
+    <button>Click me to change the paragraph</button>
+
+    <script>
+    	var a = $('h1').html()
+		console.log(a); // would print "Pricing"
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

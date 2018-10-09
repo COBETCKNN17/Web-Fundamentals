@@ -1,0 +1,157 @@
+.wrapper {
+	width: 970px;
+	font-family: arial;
+}
+
+#header {
+	background-color: #264665; 
+}
+
+#blue_content {
+	background-color: #264665; 
+	width: 970px;
+}
+
+#go_box {
+	width: 330px;
+	color: white;
+	text-align: right;
+	vertical-align: top;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+#go_box button {
+  height: 30px;
+  background-color: #245076;
+  border-radius: 8px;
+  color: #eaeff2;
+}
+
+#go_box p {
+	padding-right: 10px; 
+	margin-top: 5px;
+}
+
+#header div {
+  background-color: #444444;
+  width: 250px;
+  height: 60px;
+  margin-left: 120px;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px #1f2228;
+}
+
+#navigation_tiles {
+  background-color: #447CAD;
+  border-radius: 5px;
+  width: 850px;
+  height: 40px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 40px;
+}
+
+h3 {
+	display: inline-block;
+	color: white;
+	margin-top: 0px;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+#resources h5 a {
+	color: #ebeff2;
+  	font-size: 18px;
+  	padding-top: 5px;
+}
+
+#resources {
+  display: inline-block;
+  width: 200px;
+  margin-left: 100px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#description {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	text-align: center;
+	width: 570px;
+	color: #f4f7f8;
+	font-size: 16px;
+}
+
+#header a {
+  color: #c0a800;
+}
+
+.maxims {
+	font-style: italic;
+  	color: #e1c53b;
+ 	font-size: 20px;
+}
+
+.white_column {
+	display: inline-block;
+  	width: 483px;
+  	vertical-align: top;
+}
+
+.white_column h5 {
+	text-align: center;
+	margin-bottom: 2px;
+  	margin-top: 2px;
+}
+
+.white_column p {
+  width: 335px;
+  padding-left: 75px;
+  text-align: center;
+  margin-top: 1px;
+}
+
+.white_column ul {
+	margin-top: 0px;
+  	width: 290px;
+  	display: inline-block;
+  	padding-left: 125px;
+  	margin-top: 1px;
+}
+
+hr {
+  color: #72a7d5;
+  background: #72a7d5;
+  width: 80%;
+  height: 4px;
+}
+
+#footer {
+  background: linear-gradient(#27537D, #3373AB);
+  text-align: center;
+}
+
+#footer p {
+  display: inline-block;
+  margin: 40px 15px 0px 15px;
+  padding-bottom: 0px;
+}
+
+#footer a, h6 {
+  color: #7baedb;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+#footer p{
+  margin-top: 15px;
+  display: inline-block;
+  color: #72a7d5;
+  font-size: 14px;
+  padding-bottom: 7px;
+}
+
+

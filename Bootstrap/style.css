@@ -1,0 +1,7 @@
+.container {
+    background-color: azure;
+}
+
+.subcontents {
+    display: inline-block;
+}

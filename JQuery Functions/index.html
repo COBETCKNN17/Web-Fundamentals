@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery Functions Assignment</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- my css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+	<script>
+		$(document).ready(function(){
+			// hide the .show h2 and h4 content to start
+			// $("#show h2, #show h4").hide(); 
+			$('#click_button').click(function(){
+				$("#click").click(alert("The .click button was clicked!")); 
+			})
+			$('#hide_button').click(function(){
+				$("#hide").hide("hide"); 
+			})
+			$('#show_button').click(function(){
+				$("#show").show().append("<p>showing new text via append jquery function</p>"); 
+			})
+			$('#toggle_button').click(function(){
+				$("#toggle h4, #toggle h2").toggle(); 
+			})
+			$('#slideDown_button').click(function(){
+				$("#slideDown").slideUp("slow"); 
+			})
+			$('#slideUp_button').click(function(){
+				$("#slideUp h2, #slideUp h4").slideUp(); 
+			})
+			$('#slideToggle_button').click(function(){
+				$("#slideToggle h2, #slideToggle h4").slideToggle(); 
+			})
+			$('#fadeOut').click(function(){
+				$("#fadeOut").fadeOut(); 
+			})
+			$('#fadeIn_button').click(function(){
+				$("#fadeOut").fadeIn(); 
+			})
+			$('#addClass_button').click(function(){
+				$("#addClass").addClass("red"); 
+			})
+			$('#before_button').click(function(){
+				$("#before").before("<p>Before Hello...</p>"); 
+			})
+			$('#after_button').click(function(){
+				$("#after").after("<p>After Hello...</p>"); 
+			})
+			$('#append_button').click(function(){
+				$("#append h4").append("appending content to h4 tag"); 
+			})
+			$('#html_button').click(function(){
+				$("#html h4").html("overwriting h4 content with html function"); 
+			})
+			$('#attr_button').click(function(){
+				$("#attr").text('content replaced'); 
+			})
+			$('#val_button').click(function(){
+				$("#val").text('static value'); 
+			})
+			$('#text_button').click(function(){
+				$("#text").text('<p>adding new text</p>'); 
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<h1>JQuery Functions</h1>
+		<div class="element" id="click">
+			<h2>.click function</h2>
+			<button type="button" class="btn btn-primary" id="click_button">.click</button>
+			<h4>click the '.click' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="hide">
+			<h2>.hide function</h2>
+			<button type="button" class="btn btn-primary" id="hide_button">.hide</button>
+			<h4>click the '.hide' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="show">
+			<h2>.show function</h2>
+			<button type="button" class="btn btn-primary" id="show_button">.show</button>
+			<h4>click the '.show' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="toggle">
+			<h2>.toggle function</h2>
+			<button type="button" class="btn btn-primary" id="toggle_button">.toggle</button>
+			<h4>click the '.toggle' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="slideDown">
+			<h2>.slideDown function</h2>
+			<button type="button" class="btn btn-primary" id="slideDown_button">.slideDown</button>
+			<h4>click the '.slideDown' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="slideUp">
+			<h2>.slideUp function</h2>
+			<button type="button" class="btn btn-primary" id="slideUp_button">.slideUp</button>
+			<h4>click the '.slideUp' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="slideToggle">
+			<h2>.slideToggle function</h2>
+			<button type="button" class="btn btn-primary" id="slideToggle_button">.slideToggle</button>
+			<h4>click the '.slideToggle' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="fadeOut">
+			<h2>.fadeOut function</h2>
+			<button type="button" class="btn btn-primary" id="fadeOut_button">.fadeOut</button>
+			<h4>click the '.fadeOut' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="fadeIn">
+			<h2>.fadeIn function</h2>
+			<button type="button" class="btn btn-primary" id="fadeIn_button">.fadeIn</button>
+			<h4>click the '.fadeIn' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="addClass">
+			<h2>.addClass function</h2>
+			<button type="button" class="btn btn-primary" id="addClass_button">.addClass</button>
+			<h4>click the '.addClass' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="before">
+			<h2>.before function</h2>
+			<button type="button" class="btn btn-primary" id="before_button">.before</button>
+			<h4>click the '.before' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="after">
+			<h2>.after function</h2>
+			<button type="button" class="btn btn-primary" id="after_button">.after</button>
+			<h4>click the '.after' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="append">
+			<h2>.append function</h2>
+			<button type="button" class="btn btn-primary" id="append_button">.after</button>
+			<h4>click the '.after' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="html">
+			<h2>.html function</h2>
+			<button type="button" class="btn btn-primary" id="html_button">.html</button>
+			<h4>click the '.html' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="attr">
+			<h2>.attr function</h2>
+			<button type="button" class="btn btn-primary" id="attr_button">.attr</button>
+			<h4>click the '.attr' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="val">
+			<h2>.val function</h2>
+			<button type="button" class="btn btn-primary" id="val_button">.val</button>
+			<h4>click the '.val' button to experience its effect!</h4>
+		</div>
+		<div class="element" id="text">
+			<h2>.text function</h2>
+			<button type="button" class="btn btn-primary" id="text_button">.text</button>
+			<h4>click the '.text' button to experience its effect!</h4>
+		</div>
+	</div>
+</body>
+</html>

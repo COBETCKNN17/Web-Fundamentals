@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gibson to Fender Transformation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+    	$(document).ready(function(){
+    		$('img').click(function() {
+			  console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+			  $(this).attr("src", $(this).attr('data-alt-src')); 
+			});
+    	})
+    </script>
+</head>
+<body>
+	<div id="container">
+		<h2>Gibson to Fender Transformation</h2>
+		<div class="guitar" id="part1"><img src="images/gibson_parts/gibson_part1.png" alt="gibson part 1" data-alt-src="images/fender_parts/fender_part1.png"></div>
+		<div class="guitar" id="part2"><img src="images/gibson_parts/gibson_part2.png" alt="gibson part 2" data-alt-src="images/fender_parts/fender_part2.png"'></div>
+		<div class="guitar" id="part3"><img src="images/gibson_parts/gibson_part3.png" alt="gibson part 3" data-alt-src="images/fender_parts/fender_part3.png"'></div>
+		<div class="guitar" id="part4"><img src="images/gibson_parts/gibson_part4.png" alt="gibson part 4" data-alt-src="images/fender_parts/fender_part4.png"></div>
+		<div class="guitar" id="part5"><img src="images/gibson_parts/gibson_part5.png" alt="gibson part 5" data-alt-src="images/fender_parts/fender_part5.png"'></div>
+	</div>
+</body>
+</html>

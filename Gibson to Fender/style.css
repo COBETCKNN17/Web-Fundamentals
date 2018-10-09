@@ -1,0 +1,15 @@
+#container {
+	background-image: url('images/wood_background-min.jpg');
+	width: 500px;
+}
+
+h2 {
+	color: beige;
+	text-align: center;
+	padding: 10px;
+}
+
+.guitar {
+	text-align: center;
+	margin:-4px;
+}

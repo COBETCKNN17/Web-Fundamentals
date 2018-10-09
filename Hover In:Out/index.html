@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hover In/Out</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){ 
+			$('.suit').click(function(){
+				$(this).hide(this); 
+			})
+			$('img').hover(function(){
+
+                temp = $(this).attr('src');
+                console.log(temp);
+                //alert('Mouse in');
+                $(this).attr('src',$(this).attr('data-alt-src'));
+            },function(){
+                //alert('Mouse out');
+                $(this).attr('src',temp);
+            });
+		})     
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<h2>Suit Store</h2>
+		<div class="suit" id="suit1"><img src="photos/suit_front.jpeg" alt="suit1" width=200 data-alt-src="photos/suit_back.jpeg"/></div>
+		<div class="suit" id="suit2"><img src="photos/black_suit_front.jpeg" alt="suit2" width=200 data-alt-src="photos/black_suit_back.jpeg"/></div>
+		<div class="suit" id="suit3"><img src="photos/suit_front.jpeg" alt="suit3" width=200 data-alt-src="photos/suit_back.jpeg"/></div>
+		<div class="suit" id="suit4"><img src="photos/black_suit_front.jpeg" alt="suit4" width=200 data-alt-src="photos/black_suit_back.jpeg"/></div>
+		<div class="suit" id="suit5"><img src="photos/suit_front.jpeg" alt="suit5" width=200 data-alt-src="photos/suit_back.jpeg"/></div>
+		<div class="suit" id="suit6"><img src="photos/black_suit_front.jpeg" alt="suit6" width=200 data-alt-src="photos/black_suit_back.jpeg"/></div>
+		<div class="suit" id="suit7"><img src="photos/suit_front.jpeg" alt="suit7" width=200 data-alt-src="photos/suit_back.jpeg"/></div>
+		<div class="suit" id="suit8"><img src="photos/black_suit_front.jpeg" alt="suit8" width=200 data-alt-src="photos/black_suit_back.jpeg"/></div>
+	</div>
+</body>
+</html>
+
